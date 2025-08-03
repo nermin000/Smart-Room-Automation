@@ -2,7 +2,7 @@
 #define BLYNK_TEMPLATE_ID "TMPL66mF_yaYl"
 #define BLYNK_TEMPLATE_NAME "WOWKI"
 #define BLYNK_DEVICE_NAME "Smart lightning"
-#define BLYNK_AUTH_TOKEN  "PdeKhLzN1cvFyaLiw9z5v7-Hltli-gCi"
+#define BLYNK_AUTH_TOKEN  "YourTokenHere"
 
 // ==== [Library Inclusions] ====
 #include <TaskScheduler.h>
@@ -18,8 +18,8 @@
 #include <Arduino.h>  // for crc32 if needed
 
 // ==== [WiFi Credentials] ====
-const char ssid[] = "Wokwi-GUEST";
-const char pass[] = "";
+const char ssid[] = "YourSSID";
+const char pass[] = "YourPass";
 
 // ==== [Pin Configuration] ====
 constexpr int PIN_DHT22 = 32;
