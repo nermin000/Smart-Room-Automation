@@ -31,7 +31,18 @@ Key Features
 Hardware Components
 -------------------
 
-ComponentDescriptionConnected Pin (ESP32)ESP32 Dev BoardCentral controller—PIR Motion SensorDetects room occupancyGPIO 34LDR SensorMeasures ambient light intensityGPIO 35 (Analog)DHT22 SensorMeasures temperature & humidityGPIO 32Relay Module (AC)Controls Air ConditionerGPIO 18Relay Module (Light)Controls lightingGPIO 19Physical SwitchManual override for lightingGPIO 23LCD Display (I2C)Shows status & timeSDA/SCL (I2C)DS3231 RTC ModuleReal-time clock for schedulingSDA/SCL (I2C)
+| Component           | Description                     | Connected Pin (ESP32) |
+|---------------------|---------------------------------|----------------------|
+| ESP32 Dev Board     | Central controller              | —                    |
+| PIR Motion Sensor   | Detects room occupancy           | GPIO 34              |
+| LDR Sensor          | Measures ambient light intensity | GPIO 35 (Analog)     |
+| DHT22 Sensor        | Measures temperature & humidity  | GPIO 32              |
+| Relay Module (AC)   | Controls Air Conditioner         | GPIO 18              |
+| Relay Module (Light)| Controls lighting                | GPIO 19              |
+| Physical Switch     | Manual override for lighting     | GPIO 23              |
+| LCD Display (I2C)   | Shows status & time              | SDA/SCL (I2C)        |
+| DS3231 RTC Module   | Real-time clock for scheduling   | SDA/SCL (I2C)        |
+
 
 Software Architecture
 ---------------------
