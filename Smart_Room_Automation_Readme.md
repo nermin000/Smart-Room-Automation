@@ -76,7 +76,7 @@ This project demonstrates a sophisticated **Smart Room Automation System** lever
 
 ## Future Enhancements
 
-- **Web-Based Dashboard:** Develop a custom web interface hosted on the ESP32 or cloud for richer user experience.
+- Web-Based Dashboard: Develop a custom web interface hosted on the ESP32 or cloud for richer user experience.
 - **Additional Sensors:** Integrate air quality, humidity, or occupancy sensors for holistic environment control.
 - **Machine Learning:** Implement adaptive algorithms to learn user habits and optimize system behavior dynamically.
 - **Security Features:** Add authentication layers and encrypted communication for enhanced IoT safety.
