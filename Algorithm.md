@@ -1,10 +1,10 @@
-# 🧠 Smart Lighting & AC Control System
+# Smart Lighting & AC Control System
 
 This document outlines the structured algorithm for a smart system that automates lighting and air conditioning based on environmental conditions, manual input, and remote control via Blynk IoT platform.
 
 ---
 
-## 📋 Overview
+## Overview
 
 The system performs the following tasks:
 
@@ -17,9 +17,9 @@ The system performs the following tasks:
 
 ---
 
-## ⚙️ Step-by-Step Algorithm
+## Step-by-Step Algorithm
 
-### ✅ Step 1: Initialization
+### Step 1: Initialization
 
 1. Begin EEPROM and load stored settings.  
 2. If settings are invalid or corrupted:  
@@ -37,7 +37,7 @@ The system performs the following tasks:
 
 ---
 
-### 🔁 Step 2: Main Loop
+### Step 2: Main Loop
 
 - Continuously run all scheduled tasks:  
   - Blynk communication  
@@ -47,7 +47,7 @@ The system performs the following tasks:
 
 ---
 
-### 📡 Step 3: Read Inputs
+### Step 3: Read Inputs
 
 - Read motion sensor (PIR).  
 - Read brightness from LDR.  
@@ -57,7 +57,7 @@ The system performs the following tasks:
 
 ---
 
-### 💡 Step 4: LED Control
+### Step 4: LED Control
 
 - Turn ON LED if any of the following is true:  
   - Blynk light override is active.  
@@ -67,7 +67,7 @@ The system performs the following tasks:
 
 ---
 
-### ❄️ Step 5: AC Control
+### Step 5: AC Control
 
 - If Blynk AC override is ON:  
   - Turn ON the AC relay.  
@@ -79,7 +79,7 @@ The system performs the following tasks:
 
 ---
 
-### 📺 Step 6: Update LCD
+### Step 6: Update LCD
 
 - Line 1: Display current time (HH:MM:SS).  
 - Line 2: Show system status message:  
@@ -92,7 +92,7 @@ The system performs the following tasks:
 
 ---
 
-### 💾 Step 7: Save Blynk Changes
+### Step 7: Save Blynk Changes
 
 - When Blynk virtual pins change:  
   - Update settings (LED or AC override).  
@@ -100,7 +100,7 @@ The system performs the following tasks:
 
 ---
 
-### 🌙 Step 8: Power Saving (Sleep Mode)
+### Step 8: Power Saving (Sleep Mode)
 
 - If current time is before 6:00 AM or after 11:00 PM:  
   - Enable timer wake-up.  
@@ -109,7 +109,7 @@ The system performs the following tasks:
 
 ---
 
-## 📝 Notes
+## Notes
 
 - CRC32 ensures safe and reliable EEPROM data.  
 - TaskScheduler allows smooth handling of timed tasks.  
