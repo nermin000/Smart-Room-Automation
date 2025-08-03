@@ -28,6 +28,7 @@ This project demonstrates a sophisticated **Smart Room Automation System** lever
 | LDR Sensor            | Measures ambient light intensity | GPIO 35 (Analog)     |
 | DHT22 Sensor          | Measures temperature & humidity  | GPIO 32              |
 | Relay Module          | Controls Air Conditioner (AC)    | GPIO 18              |
+| LED (Light Control)   | Indicates lighting status        | GPIO 19              |
 | Physical Switch       | Manual override for lighting     | GPIO 23              |
 | LCD Display (I2C)     | Shows status & time              | SDA/SCL (I2C)        |
 | DS3231 RTC Module     | Real-time clock for scheduling   | SDA/SCL (I2C)        |
